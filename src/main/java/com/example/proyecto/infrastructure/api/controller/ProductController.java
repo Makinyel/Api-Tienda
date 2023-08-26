@@ -1,7 +1,7 @@
-package com.example.proyecto.controller;
+package com.example.proyecto.infrastructure.api.controller;
 
-import com.example.proyecto.model.Product;
-import com.example.proyecto.service.product.ProductServiceImpl;
+import com.example.proyecto.domain.model.Product;
+import com.example.proyecto.infrastructure.adapter.product.ProductServiceImpl;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

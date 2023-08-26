@@ -1,7 +1,7 @@
-package com.example.proyecto.service.product;
+package com.example.proyecto.domain.service.product;
 
 
-import com.example.proyecto.model.Product;
+import com.example.proyecto.domain.model.Product;
 import java.util.List;
 
 public interface ProductService {

@@ -1,7 +1,7 @@
-package com.example.proyecto.service.category;
+package com.example.proyecto.domain.service.category;
 
 
-import com.example.proyecto.model.Category;
+import com.example.proyecto.domain.model.Category;
 import java.util.List;
 
 public interface CategoryService {

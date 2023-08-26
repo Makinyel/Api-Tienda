@@ -1,8 +1,9 @@
-package com.example.proyecto.service.product;
+package com.example.proyecto.infrastructure.adapter.product;
 
-import com.example.proyecto.model.Category;
-import com.example.proyecto.model.Product;
-import com.example.proyecto.service.category.CategoryServiceImpl;
+import com.example.proyecto.domain.model.Category;
+import com.example.proyecto.domain.model.Product;
+import com.example.proyecto.domain.service.product.ProductService;
+import com.example.proyecto.infrastructure.adapter.category.CategoryServiceImpl;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;

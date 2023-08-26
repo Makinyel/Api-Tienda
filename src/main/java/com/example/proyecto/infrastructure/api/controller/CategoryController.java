@@ -1,7 +1,7 @@
-package com.example.proyecto.controller;
+package com.example.proyecto.infrastructure.api.controller;
 
-import com.example.proyecto.model.Category;
-import com.example.proyecto.service.category.CategoryService;
+import com.example.proyecto.domain.model.Category;
+import com.example.proyecto.domain.service.category.CategoryService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
