@@ -11,8 +11,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProductServiceImpl implements ProductService {
 
+  private final CategoryServiceImpl categoryServiceImpl;
+
   @Autowired
-  private CategoryServiceImpl categoryServiceImpl;
+  public ProductServiceImpl(CategoryServiceImpl categoryServiceImpl) {
+    this.categoryServiceImpl = categoryServiceImpl;
+  }
 
   List<Product> productList = new ArrayList<>();
 

@@ -12,11 +12,4 @@ public class Product {
   private String sku;
   private List<Category> categoryList;
 
-  public Product(Long id, String name, Float price, String sku, List<Category> categoryList) {
-    this.id = id;
-    this.name = name;
-    this.price = price;
-    this.sku = sku;
-    this.categoryList = categoryList;
-  }
 }
