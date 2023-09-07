@@ -7,7 +7,7 @@ spring:
 spring:
   profile: local
   datasource:
-    url: jdbc:postgresql://localhost:5432/api-tienda
+    url: jdbc:postgresql://localhost:5432/truck-health
     username: postgres
     password: 1041971977
     test-on-borrow: true

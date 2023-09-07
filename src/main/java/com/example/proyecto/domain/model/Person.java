@@ -5,8 +5,11 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class Category {
+public class Person {
 
   private Long id;
   private String name;
+  private String lastName;
+  private String numberId;
+
 }
