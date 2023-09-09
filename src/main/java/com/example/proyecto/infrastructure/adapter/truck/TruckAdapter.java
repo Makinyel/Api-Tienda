@@ -24,6 +24,11 @@ public class TruckAdapter implements TruckService {
   }
 
   @Override
+  public Truck findById(Long id) {
+    return truckRepository.findById(id).map(truckMapper::toEntity).orElse(null);
+  }
+
+  @Override
   public List<Truck> findAllTrucks() {
     return truckMapper.toEntity(truckRepository.findAll());
   }

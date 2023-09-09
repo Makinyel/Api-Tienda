@@ -24,6 +24,11 @@ public class PersonAdapter implements PersonService {
   }
 
   @Override
+  public Person findById(Long id) {
+    return personRepository.findById(id).map(personDtoMapper::toEntity).orElse(null);
+  }
+
+  @Override
   public List<Person> findAllPersons() {
     return personDtoMapper.toEntity(personRepository.findAll());
   }

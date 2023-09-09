@@ -19,8 +19,8 @@ public class TruckController {
   private final TruckService truckService;
 
   @PostMapping
-  public Truck create(@RequestBody Truck truck) {
-    return truckService.createTruck(truck);
+  public ResponseEntity<Truck> create(@RequestBody Truck truck) {
+    return ResponseEntity.ok(truckService.createTruck(truck));
   }
 
   @GetMapping

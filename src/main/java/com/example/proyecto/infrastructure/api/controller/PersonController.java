@@ -1,7 +1,7 @@
 package com.example.proyecto.infrastructure.api.controller;
 
+import com.example.proyecto.application.person.PersonApplication;
 import com.example.proyecto.domain.model.Person;
-import com.example.proyecto.domain.service.person.PersonService;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -16,15 +16,15 @@ import org.springframework.web.bind.annotation.RestController;
 @AllArgsConstructor
 public class PersonController {
 
-  private final PersonService personService;
+  private final PersonApplication personApplication;
 
   @PostMapping
-  public Person create(@RequestBody Person person) {
-    return personService.createPerson(person);
+  public ResponseEntity<Person> create(@RequestBody Person person) {
+    return ResponseEntity.ok(personApplication.create(person));
   }
 
   @GetMapping
   public ResponseEntity<List<Person>> findAll() {
-    return ResponseEntity.ok(personService.findAllPersons());
+    return ResponseEntity.ok(personApplication.findAll());
   }
 }
