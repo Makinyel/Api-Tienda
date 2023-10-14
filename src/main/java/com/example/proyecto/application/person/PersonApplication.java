@@ -18,4 +18,8 @@ public class PersonApplication {
     return personService.findAllPersons();
   }
 
+  public Person findById(Long id) {
+    return personService.findById(id);
+  }
+
 }

@@ -1,6 +1,5 @@
 package com.example.proyecto.application.truck;
 
-import com.example.proyecto.domain.model.Person;
 import com.example.proyecto.domain.model.Truck;
 import com.example.proyecto.domain.service.truck.TruckService;
 import java.util.List;
@@ -17,6 +16,14 @@ public class TruckApplication {
 
   public List<Truck> findAll() {
     return truckService.findAllTrucks();
+  }
+
+  public Truck findById(Long id) {
+    return truckService.findById(id);
+  }
+
+  public void editTruck(Truck truck) {
+    truckService.editTruck(truck);
   }
 
 }

@@ -33,6 +33,15 @@ public class TruckAdapter implements TruckService {
     return truckMapper.toEntity(truckRepository.findAll());
   }
 
+  @Override
+  public void editTruck(Truck truck) {
+  /*truckRepository.editTruck(truck.getId(),
+        truck.getGasOilStatus(),
+        truck.getGpsStatus(),
+        truck.getStatus());*/
+
+  }
+
   private void validatePlaca(String placa) {
     if (Objects.nonNull(placa)) {
       Truck truckresul = truckRepository.findByPlaca(placa)
@@ -42,6 +51,7 @@ public class TruckAdapter implements TruckService {
             "YA HAY UN CAMION REGISTRADO CON ESTA PLACA " + truckresul.getPlaca());
       }
     }
+
   }
 }
 

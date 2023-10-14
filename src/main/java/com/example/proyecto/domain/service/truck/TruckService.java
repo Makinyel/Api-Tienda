@@ -11,4 +11,6 @@ public interface TruckService {
   Truck findById(Long id);
 
   List<Truck> findAllTrucks();
+
+  void editTruck(Truck truck);
 }
