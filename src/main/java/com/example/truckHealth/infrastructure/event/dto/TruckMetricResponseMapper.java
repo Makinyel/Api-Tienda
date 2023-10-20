@@ -7,4 +7,5 @@ import org.mapstruct.MappingConstants.ComponentModel;
 
 @Mapper(componentModel = ComponentModel.SPRING)
 public interface TruckMetricResponseMapper extends EntityToDto<Metric, TruckMetric> {
+
 }

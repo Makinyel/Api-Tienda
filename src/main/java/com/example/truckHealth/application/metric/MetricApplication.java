@@ -15,12 +15,10 @@ import lombok.extern.log4j.Log4j2;
 @AllArgsConstructor
 public class MetricApplication {
 
+  public static Map<String, Thread> mapThereads = new HashMap<>();
   private final TruckApplication truckApplication;
   private final PersonApplication personApplication;
   private final MetricService metricService;
-
-
-  public static Map<String, Thread> mapThereads = new HashMap<>();
 
   public void processMetric(Metric metric) {
     String placa = metric.getPlaca();

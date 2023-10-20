@@ -11,5 +11,6 @@ public interface PersonService {
   Person findById(Long id);
 
   List<Person> findAllPersons();
+
   Person findByName(String name);
 }
